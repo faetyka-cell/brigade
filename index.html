@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Brigade – Pilote ton équipe de clippeurs payés aux vues</title>
+<meta name="description" content="Un lien de suivi par clippeur, les vues et les clics relevés, la paie calculée au millier de vues. Accès fondateur à 9 €/mois.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Brigade – Pilote ton équipe de clippeurs payés aux vues">
+<meta property="og:description" content="Fini le tableur : un lien par clippeur, les vues comptées, la paie calculée.">
+<meta name="theme-color" content="#1740ff">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f3f5f7; --ink:#0f1720; --muted:#4b5663; --line:#d5dbe1;
+  --blue:#1740ff; --blue-d:#0f2fcc; --white:#fff;
+  --font:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:18px;line-height:1.55}
+.wrap{max-width:640px;margin:0 auto;padding:0 20px}
+section{padding:40px 0;border-top:1px solid var(--line)}
+section:first-of-type{border-top:0}
+h1{font-size:clamp(2rem,8vw,3.1rem);line-height:1.05;font-weight:800;letter-spacing:-.02em}
+h2{font-size:1.5rem;line-height:1.2;font-weight:800;letter-spacing:-.01em;margin-bottom:14px}
+p+p{margin-top:12px}
+.lead{margin-top:18px;font-size:1.15rem;color:var(--muted)}
+.btn{display:block;width:100%;text-align:center;background:var(--blue);color:var(--white);text-decoration:none;font-weight:800;font-size:1.1rem;padding:18px 20px;border-radius:6px;min-height:56px}
+.btn:hover{background:var(--blue-d)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.note{font-size:.92rem;color:var(--muted);margin-top:10px}
+.top{padding:28px 0 0;font-weight:800;font-size:1.1rem}
+.top span{color:var(--blue)}
+.ledger{margin-top:28px;background:var(--ink);color:var(--white);border-radius:6px;padding:6px 16px 12px;font-variant-numeric:tabular-nums}
+.ledger .cap{font-size:.8rem;color:#9fb0c2;padding:10px 0 6px}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 12px;padding:10px 0;border-top:1px solid #26323f}
+.row b{font-weight:600}
+.row .v{grid-column:1;font-size:.85rem;color:#9fb0c2}
+.row .pay{grid-row:1/3;grid-column:2;align-self:center;font-weight:800;font-size:1.2rem}
+.row.stop .pay{color:#9fb0c2}
+.row.stop b::after{content:"  ne publie plus";font-weight:400;color:#ff8a70;font-size:.85rem}
+.total{display:flex;justify-content:space-between;border-top:2px solid var(--white);padding-top:10px;margin-top:2px;font-weight:800}
+ul.plain{list-style:none;padding:0}
+ul.plain li{padding:12px 0;border-top:1px solid var(--line)}
+ul.plain li:first-child{border-top:0}
+ul.plain strong{display:block}
+.box{border:2px solid var(--ink);border-radius:6px;padding:18px}
+footer{padding:32px 0 48px;border-top:1px solid var(--line);font-size:.85rem;color:var(--muted)}
+footer p+p{margin-top:8px}
+mark{background:#fff3a3;padding:0 2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="top">Brigade<span>.</span></div>
+
+<section>
+  <h1>Tes clippeurs publient. Toi, tu ne devrais pas passer tes soirées à compter leurs vues.</h1>
+  <p class="lead">Un lien de suivi par clippeur, les vues et les clics relevés, la paie calculée au millier de vues. Fini le tableur.</p>
+
+  <div class="ledger" aria-label="Exemple de relevé de paie">
+    <div class="cap">Exemple de relevé, 2 € par 1 000 vues</div>
+    <div class="row"><b>@clip_marie</b><span class="v">48 200 vues, 3 120 clics</span><span class="pay">96,40 €</span></div>
+    <div class="row"><b>@clip_yanis</b><span class="v">21 900 vues, 1 540 clics</span><span class="pay">43,80 €</span></div>
+    <div class="row stop"><b>@clip_lea</b><span class="v">0 vue depuis 12 jours</span><span class="pay">0,00 €</span></div>
+    <div class="total"><span>À payer</span><span>140,20 €</span></div>
+  </div>
+
+  <div style="margin-top:28px">
+    <a class="btn" href="LIEN_STRIPE">Réserver mon accès fondateur, 9 €/mois</a>
+    <p class="note">Sans engagement, résiliable à tout moment. Satisfait ou remboursé 14 jours.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Le problème, en chiffres</h2>
+  <p>Avec 20 clippeurs, vérifier les vues, contrôler que chaque lien pointe chez toi et calculer chaque paie prend facilement <mark>5 à 6 heures par semaine</mark>.</p>
+  <p>Au bout de deux mois, plus personne ne tient ce rythme. Et le levier s'arrête.</p>
+</section>
+
+<section>
+  <h2>Ce que Brigade fait pour toi</h2>
+  <ul class="plain">
+    <li><strong>Un lien par clippeur</strong>À coller dans sa bio. Tu sais qui t'envoie du trafic.</li>
+    <li><strong>Vues et clics relevés</strong>Les vues déclarées et les clics reçus, au même endroit.</li>
+    <li><strong>La paie calculée</strong>Au millier de vues, avec ton plafond mensuel. Tu vois qui rapporte et qui ne publie plus.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Accès fondateur</h2>
+  <div class="box">
+    <p><strong>9 €/mois, soit 0,30 € par jour</strong>, jusqu'à 25 clippeurs. Ce prix reste le tien tant que tu restes abonné.</p>
+    <p style="margin-top:14px"><a class="btn" href="LIEN_STRIPE">Réserver mon accès fondateur</a></p>
+    <p class="note">Sans engagement, résiliable à tout moment.</p>
+  </div>
+  <p style="margin-top:20px"><strong>Garantie 14 jours.</strong> Si Brigade ne te convient pas, écris-moi à <a href="mailto:EMAIL_CONTACT">EMAIL_CONTACT</a> dans les 14 jours après ton paiement. Je te rembourse sous 5 jours ouvrés, sans question.</p>
+  <p><strong>Je suis transparent :</strong> Brigade est en construction. Les premiers inscrits ont l'accès dès l'ouverture, prévue le DATE_OUVERTURE. Si je ne livre pas, tu es remboursé.</p>
+</section>
+
+<footer>
+  <p>Brigade, édité par PRENOM NOM / RAISON_SOCIALE, SIRET : NUMERO_SIRET, ADRESSE_COMPLETE.</p>
+  <p>Contact : <a href="mailto:EMAIL_CONTACT">EMAIL_CONTACT</a>. Hébergeur : HEBERGEUR (nom et adresse).</p>
+  <p>Paiement sécurisé par Stripe. Je ne vois jamais ton numéro de carte.</p>
+  <p>Cette page ne dépose aucun cookie. CGV et politique de confidentialité : à ajouter avant l'ouverture.</p>
+</footer>
+
+</div>
+</body>
+</html>
